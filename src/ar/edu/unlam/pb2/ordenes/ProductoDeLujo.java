@@ -6,7 +6,7 @@ package ar.edu.unlam.pb2.ordenes;
 public class ProductoDeLujo extends Producto{	
 	
 	/*
-	 * Se le aplica el 21% y un 15% de impuesto adicional 
+	 * Se le aplica el 21% y un 15% de impuesto adicional = 36%
 	 * por derechos de importación.
 	 */
 	
@@ -17,7 +17,7 @@ public class ProductoDeLujo extends Producto{
 
 	@Override
 	public Double getImpuesto() {
-		return super.getPrecioFinal()*1.15;
+		return super.getImpuesto() + getPrecio()*15/100;
 	}
 
 }

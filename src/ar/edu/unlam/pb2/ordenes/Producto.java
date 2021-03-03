@@ -1,7 +1,7 @@
 package ar.edu.unlam.pb2.ordenes;
 
 public class Producto {
-	private Integer numero; //id del producto
+	private Integer numero; //id d
 	private String descripcion;
 	private Double precio;
 

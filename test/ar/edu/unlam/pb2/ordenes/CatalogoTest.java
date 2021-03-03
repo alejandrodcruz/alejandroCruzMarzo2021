@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class CatalogoTest {
 
-	@Test
+	@Test(expected= Exception.class)
 	public void queQuitarProductoInexitenteLanceExcepcion() {
 		
 	}

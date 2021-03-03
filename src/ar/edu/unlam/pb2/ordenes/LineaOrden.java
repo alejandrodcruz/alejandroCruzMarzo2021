@@ -8,7 +8,10 @@ public class LineaOrden {
 	/*
 	 * Crea un Item en la Orden con un Producto y catidad especificados.
 	 */
-	public LineaOrden(Producto producto, Integer cantidad) {		
+	public LineaOrden(Producto producto, Integer cantidad) {
+		
+		
+		
 	}	
 	
 	/*
