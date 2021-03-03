@@ -16,8 +16,8 @@ public class ProductoDeLujo extends Producto{
 	}
 
 	@Override
-	public Double getImpuesto() {
-		return super.getImpuesto() + getPrecio()*15/100;
+	public Double getImpuesto() { 
+		return super.getImpuesto() + getPrecio()*15/100; // Agrega 15% adicional
 	}
 
 }

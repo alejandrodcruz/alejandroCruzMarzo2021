@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2.ordenes;
 
-public class Producto {
+public class Producto implements Comparable<Producto>{
 	private Integer numero; //id d
 	private String descripcion;
 	private Double precio;
@@ -42,5 +42,10 @@ public class Producto {
 	 */
 	public Double getPrecioFinal() {
 		return this.precio*1.21;
+	}
+
+	@Override
+	public int compareTo(Producto o) {
+		return this.numero.compareTo(o.numero);
 	}
 }

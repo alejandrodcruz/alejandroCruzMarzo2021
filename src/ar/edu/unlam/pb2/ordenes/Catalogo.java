@@ -37,9 +37,14 @@ public class Catalogo {
 	 * Remueve Producto del Catálogo.
 	 * Lanza una Excepción si el Producto no se encuentra en el Catálogo.
 	 */
-	public Boolean quitarProducto(Producto producto) {
-		this.cantidad=0;
-		return catalogo.remove(producto);		
+	public Boolean quitarProducto(Producto producto) throws Exception {
+		
+		if(catalogo.contains(producto)) {
+			this.cantidad=0;
+			return catalogo.remove(producto);
+		}
+		throw new Exception();
+				
 	}
 	
 	/*
