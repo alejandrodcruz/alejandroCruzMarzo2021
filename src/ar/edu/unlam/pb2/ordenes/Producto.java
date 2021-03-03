@@ -1,21 +1,25 @@
 package ar.edu.unlam.pb2.ordenes;
 
 public class Producto {
-	private Integer numero;
+	private Integer numero; //id del producto
 	private String descripcion;
 	private Double precio;
 
 	/*
 	 * Se crea un producto.
 	 */
-	public Producto(Integer numero, String descripcion, Double precio) {		
+	public Producto(Integer numero, String descripcion, Double precio) {
+		super();
+		this.numero = numero;
+		this.descripcion = descripcion;
+		this.precio = precio;
 	}
 	
 	/*
 	 * Retorna el precio unitario del Producto.
 	*/
 	public Double getPrecio() {
-		return null;
+		return this.precio;
 	}
 	
 	/*
@@ -23,7 +27,7 @@ public class Producto {
 	 * Todo producto tiene un 21% de impuesto.
 	 */
 	public Double getImpuesto() {
-		return null;
+		return precio*0.21;
 	}
 	
 	/*
@@ -37,6 +41,6 @@ public class Producto {
 	 * Devuelve el precio del producto luego de aplicar el impuesto.
 	 */
 	public Double getPrecioFinal() {
-		return null;
+		return this.precio*1.21;
 	}
 }

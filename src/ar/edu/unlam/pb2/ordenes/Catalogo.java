@@ -1,6 +1,7 @@
 package ar.edu.unlam.pb2.ordenes;
 
 import java.util.Set;
+import java.util.TreeSet;
 
 /*
  * Mantiene una colección de Productos, los cuales no pueden
@@ -12,15 +13,23 @@ public class Catalogo {
 	/*
 	 * ¿Cuál es la colección adecuada?
 	 */
-	
-	
-	
+	 private Set<Producto> catalogo;
+	 private Integer cantidad;
+	 
+	 
+	public Catalogo() {
+		super();
+		this.catalogo = new TreeSet<Producto>(); 
+		this.cantidad=0;
+	}
+
 	/*
 	 * Agregar producto al catálogo.
 	 * No se permiten Productos duplicados. Criterio: número de Producto. 
 	 */
 	public Boolean agregarProducto(Producto producto, Integer cantidad) {
-		return null;
+		this.cantidad = cantidad;
+		return catalogo.add(producto);
 		
 	}
 	
