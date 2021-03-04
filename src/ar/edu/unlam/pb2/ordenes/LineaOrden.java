@@ -19,7 +19,7 @@ public class LineaOrden {
 	 * Informa el Subtotal del Item.
 	 */
 	public Double getSubtotal() {
-		return super.();
+		return getSubtotal();
 		
 	}
 	/*
