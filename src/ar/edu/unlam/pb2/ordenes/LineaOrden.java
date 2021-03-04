@@ -1,7 +1,7 @@
 package ar.edu.unlam.pb2.ordenes;
 
 
-public class LineaOrden {
+public class LineaOrden extends Orden{
 	private Producto item;
 	private Integer cantidad;
 		
