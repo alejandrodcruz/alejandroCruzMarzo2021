@@ -10,28 +10,29 @@ public class LineaOrden {
 	 */
 	public LineaOrden(Producto producto, Integer cantidad) {
 		
-		
+		super();
+		this.item = item;
+		this.cantidad = cantidad;
 		
 	}	
-	
 	/*
 	 * Informa el Subtotal del Item.
 	 */
 	public Double getSubtotal() {
-		return null;
+		return super.();
 		
 	}
 	/*
 	 * Devuelve el Producto.	
 	 */
 	public Producto getProducto() {
-		return null;
+		return item;
 	}
 	/*
 	 * Devuelve la cantidad.
 	 */
 	public Integer getCantidad() {
-		return null;
+		return cantidad;
 	}	
 	
 }
